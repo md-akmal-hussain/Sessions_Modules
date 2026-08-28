@@ -1,6 +1,6 @@
 resource "azurerm_public_ip" "example" {
-  for_each            = var.pips
-  
+  for_each = var.pips
+
   name                = each.value.pip_name
   resource_group_name = each.value.rg_name
   location            = each.value.location
@@ -9,4 +9,4 @@ resource "azurerm_public_ip" "example" {
 
 
 
-  
+

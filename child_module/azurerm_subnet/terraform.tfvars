@@ -13,7 +13,7 @@ subnets = {
     address_prefixes = ["10.0.2.0/24"]
   }
 
-   snet3 = {
+  snet3 = {
     snet_name        = "AzureBastionSubnet"
     vnet_name        = "vnet-child-01"
     rg_name          = "rg-child-01"
